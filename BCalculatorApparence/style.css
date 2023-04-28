@@ -11,8 +11,8 @@
 }
 body{
     background-image: url(image/math-formula.jpg);
-    /* background-repeat: no-repeat; */
-    background-position: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container{
     width: 100%;
@@ -36,8 +36,8 @@ body{
 .calculator form input{
     border: 0;
     outline: 0;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 10px;
     box-shadow: -8px -8px 15px rgba(184, 12, 12, 0.1),
                 5px 5px 15px rgba(0, 0, 0, 0.2); 
@@ -59,7 +59,7 @@ form .display input{
     box-shadow: none;
 }
 form input.equal{
-    width: 145px;
+    width: 115px;
 }
 .operator{
     color: rgb(247, 242, 242);
