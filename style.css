@@ -1,0 +1,66 @@
+:root{
+    --First-color:#fff;
+    --second-color:#3a4452;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'lato',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(image/math-formula.jpg);
+    /* background-repeat: no-repeat; */
+    background-position: contain;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.display{
+    border: 1px solid var(--First-color);
+    border-radius: 5px;
+}
+.calculator{
+    background: transparent url(image/Cartoon-maths.png);
+    background-color: var(--second-color);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--First-color);
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(184, 12, 12, 0.1),
+                5px 5px 15px rgba(0, 0, 0, 0.2); 
+                background: transparent;
+                font-size: 20px;
+                color: var(--First-color);
+                cursor: pointer;
+                margin: 10px;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.equal{
+    width: 145px;
+}
+.operator{
+    color: rgb(247, 242, 242);
+}
