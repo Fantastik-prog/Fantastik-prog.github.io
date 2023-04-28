@@ -1,0 +1,22 @@
+/* ..........Navigation.......... */
+:root{
+    --one-color:#198754;
+}
+.navbar .footer-nav {
+    position: fixed;
+    bottom: 0;
+}
+.navbar .footer-nav p::before{
+    content:'';
+    display:block;
+    width:100%;
+    text-align: center;
+    border: 1px solid var(--one-color);
+}
+.navbar .footer-nav p{
+    text-align: center;
+    font-size: 11px;
+}
+.navbar .footer-nav p a{
+    text-decoration: none;
+}
