@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Game RPS</title>
+    <link rel="shortcut icon" href="./rock-emoji.png" type="image/x-icon">
+    <!-- links for css -->
+    <link rel="stylesheet" href="Rock-Paper-Scissors.css">
+    <!-- links for js -->
+    <script src="Rock-Paper-Scissors.js"></script>
+</head>
+<body>
+    <p class="title-p">Rock Paper Scissors</p>
+    
+    <div class="container-0f-btn">
+      <button class="btn-emoji" onclick="
+        playGame('rock');
+      "><img src="./rock-emoji.png" alt="rock-emoji" class="move-emoji"></button>
+
+      <button class="btn-emoji" onclick="
+        playGame('paper');
+      "><img src="./paper-emoji.png" alt="paper-emoji" class="move-emoji"></button>
+
+      <button class="btn-emoji" onclick="
+        playGame('scissors');
+      "><img src="./scissors-emoji.png" alt="scissors-emoji" class="move-emoji"></button>
+    </div>
+    
+
+    <p class="space-result result"></p>
+    <p class="space-player player"></p>
+    <p class="space-score score"></p>
+
+    <button class="reset-score-btn" onclick="
+      score.wins = 0;
+      score.losses = 0;
+      score.ties = 0;
+      localStorage.removeItem('score');
+      updateScoreElement();
+    "><img src="./refresh-icon.png" alt="refresh-icon" class="btn-refresh"></i></button>
+
+<button class="Game-return-btn">
+    <a href="index.html"><img src="./Left-Arrow-Icon.png" alt="refresh-icon" class="btn-refresh"></i></a>
+</button>
+
+</body>
+</html>
