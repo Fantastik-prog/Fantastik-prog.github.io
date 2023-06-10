@@ -80,8 +80,8 @@ let score = JSON.parse(localStorage.getItem('score')) || {
           Computer`;
 
 
-    alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
-    Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
+    // alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
+    // Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
   }
 
   function updateScoreElement(){
